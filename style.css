@@ -1,0 +1,110 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #566573;
+    height: 100vh;
+}
+body .heading{
+    margin: 3rem 0;
+    text-align: center;
+}
+body .title{
+    font-size: 25px;
+    color: #eee5e9;
+    margin-bottom: 20px;
+}
+body .sub-title{
+    font-size: 1.5rem;
+    color: #eee5e9;
+    opacity: 0.8;
+}
+body .user-input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+body .user-input-section .user-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+body .user-input-section .user-input input{
+    width: 80%;
+    max-width: 35rem;
+    font-size: 16px;
+    outline: none;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #979A9A;
+    padding: 1.5rem 1rem;
+    margin: 1rem 1rem 2rem 1rem;
+}
+body .button{
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    background-color: #92dce5;
+    color: #5B2C6F;
+    font-size: 1.6rem;
+    transition: 0.3s;
+}
+button:hover{
+    opacity: .7;
+}
+body .qr-code-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+body .qr-code-container .qr-code{
+    display: flex;
+    border-radius: 1rem;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+body .qr-code-container .qr-code button{
+    display: flex;
+    justify-content: center;
+    background-color: #1f1f1f;
+    color: #eae6e5;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-top: 2.5rem;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+body .qr-code-container .qr-code button a{
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #eae6e5;
+    padding: 1rem;
+}
+@media screen and (max-width: 768px) {
+    body{
+        flex-direction: column;
+        height: 100%;
+    }
+    body .heading{
+        margin: 2rem 0;
+        text-align: center;
+    }
+    body .user-input-section{
+        width: 100%;
+        margin: 2rem 0 0 0;
+    }
+    body .qr-code-container{
+        width: 100%;
+    }
+}
